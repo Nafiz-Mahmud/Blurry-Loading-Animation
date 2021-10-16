@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.main .bg {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 195, 255, 0.3)),
+      to(rgba(250, 0, 0, 0.4))
+    ),
+    url("./image/pexels-mike-noga-3608542.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 195, 255, 0.3),
+      rgba(250, 0, 0, 0.4)
+    ),
+    url("./image/pexels-mike-noga-3608542.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  z-index: -1;
+  -webkit-filter: blur(100px);
+  filter: blur(100px);
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+
+.main .loading-text {
+  position: absolute;
+  top: 60%;
+  right: 18%;
+  font-size: 4rem;
+  z-index: 1;
+  -webkit-filter: blur(100px);
+  filter: blur(100px);
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+}
+
+.main .loading-text-two {
+  position: absolute;
+  top: 60.5%;
+  right: 17.8%;
+  font-size: 4rem;
+  color: #363636;
+  -webkit-transition: all 4s ease;
+  transition: all 4s ease;
+}
+
+.main.active .bg {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+}
+
+.main.active .loading-text {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  color: gold;
+}
+
+.main.active .loading-text-two {
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
